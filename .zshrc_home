@@ -1,0 +1,10 @@
+alias v='/usr/local/Cellar/vim/8.0.0094/bin/vim'
+alias l='ls -ltrG'
+alias h='fc -lt '%F %T' 1'
+# backspace,deleteキーを使えるように
+stty erase ^H
+bindkey "^[[3~" delete-char
+PROMPT='%F{magenta}5$%F '
+RPROMPT='[%F{green}%d%F]'
+export JAVA_HOME=`/usr/libexec/java_home`
+export PATH=$JAVA_HOME/bin:$PATH
